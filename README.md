@@ -1,0 +1,2 @@
+# MinecraftAutoSave
+Minecraftのセーブファイルのバックアップを自動で取るアプリケーション
