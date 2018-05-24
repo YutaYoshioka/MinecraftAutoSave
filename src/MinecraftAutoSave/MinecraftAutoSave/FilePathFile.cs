@@ -81,6 +81,7 @@ namespace MinecraftAutoSave
 			if (!(File.Exists("FilePath.txt")))
 			{
 				ConsoleIO.WriteError("FilePath.txt が見つかりません。\nFilePath.txt に、ワールドデータへのパスを入力してください。");
+				Console.ReadLine();
 				Environment.Exit(0);
 			}
 
@@ -89,6 +90,7 @@ namespace MinecraftAutoSave
 			if (WorldsPath.Count == 0)
 			{
 				ConsoleIO.WriteError("FilePath.txt の中身がありません。\nFilePath.txt に、ワールドデータへのパスを入力してください。");
+				Console.ReadLine();
 				Environment.Exit(0);
 			}
 
@@ -112,6 +114,7 @@ namespace MinecraftAutoSave
 			if (WorldsPath.Count == 0)
 			{
 				ConsoleIO.WriteError("FilePath.txt の中に有効なファイルパスが存在しません。\nFilePath.txt に、ワールドデータへのパスを入力してください。");
+				Console.ReadLine();
 				Environment.Exit(0);
 			}
 
